@@ -10,7 +10,6 @@ import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
 import numeral from 'numeral'
 import './FormContainer.scss'
-import WOW from 'wow.js'
 
 
 const paymentStyles = {
@@ -44,8 +43,7 @@ class FormContainer extends Component {
     }
 
     componentDidMount = () => {
-        const wow = new WOW.WOW();
-        wow.init();
+  
     }
 
     handleInput = (e) => {
@@ -146,7 +144,6 @@ class FormContainer extends Component {
                     <Row>
                         <Col md="6">
                             <Input
-                                className="wow bounceIn"
                                 label={'PURCHASE PRICE'}
                                 required={true}
                                 name={'purchasePrice'}
